@@ -4,11 +4,11 @@ from transformers import PreTrainedModel, PreTrainedTokenizer
 
 # Define complexity levels and their corresponding k values
 K_VALUES = {
-    "simple_math": 5, 
-    "easy_questions": 5,       # Basic arithmetic, simple calculations
-    "general_knowledge": 8,  # Basic facts, common knowledge
-    "complex_reasoning": 10,  # Multi-step problems, logical reasoning
-    "expert_topics": 12      # Technical, scientific, or specialized topics
+    "simple_math": 4,        # Simple calculations only need a few attempts
+    "easy_questions": 3,     # Basic questions with straightforward answers
+    "general_knowledge": 7,  # Might need a few more tries for better accuracy
+    "complex_reasoning": 10,  # More paths for complex problems
+    "expert_topics": 10    # Slightly more paths for specialized topics
 }
 
 CLASSIFICATION_PROMPT = """Given a question, classify its complexity into one of these categories:

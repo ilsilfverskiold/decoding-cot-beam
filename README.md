@@ -25,6 +25,7 @@ After your access is granted, make sure to save your Huggingface token on Beam (
 ```bash
 beam secret create HF_TOKEN
 ```
+We are using this HF_TOKEN within the code, so if you do not have it stored you will get an error.
 After you are done you can serve the endpoint:
 
 ```bash
