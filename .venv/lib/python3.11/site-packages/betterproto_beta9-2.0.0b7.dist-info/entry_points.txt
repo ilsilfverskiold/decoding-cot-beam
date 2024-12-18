@@ -1,0 +1,3 @@
+[console_scripts]
+protoc-gen-python_betterproto_beta9=betterproto.plugin:main
+

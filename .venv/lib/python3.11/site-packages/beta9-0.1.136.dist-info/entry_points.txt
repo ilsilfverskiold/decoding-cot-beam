@@ -1,0 +1,3 @@
+[console_scripts]
+beta9=beta9.cli.main:start
+
