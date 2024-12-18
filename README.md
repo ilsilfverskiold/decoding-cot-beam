@@ -20,10 +20,10 @@ beam configure default --token "your_token_here"
 
 Retrieve your HF token from this page: https://huggingface.co/settings/tokens
 
-After your access is granted, make sure to save your Huggingface token on Beam:
+After your access is granted, make sure to save your Huggingface token on Beam (or via the platform):
 
-```sh
-$ beam secret create HF_TOKEN
+```bash
+beam secret create HF_TOKEN
 ```
 After you are done you can serve the endpoint:
 
@@ -45,4 +45,10 @@ curl -X POST 'https://app.beam.cloud/endpoint/id/[ENDPOINT-ID]' \
         {"role": "user", "content": ""Which of the following activities constitute real sector in the economy? 1. Farmers harvesting their crops 2. Textile mills converting raw cotton into fabrics 3. A commercial bank lending money to a trading company 4. A corporate body issuing Rupee Denominated Bonds overseas. Select the correct answer using the code given below: a) 1 and 2 only,b) 2, 3 and 4 only, c) 1, 3 and 4 only, d) 1, 2, 3 and 4""}
     ]
 }'
+```
+
+If you want to deploy you simply run:
+
+```bash
+beam deploy app.py:generate_text
 ```
